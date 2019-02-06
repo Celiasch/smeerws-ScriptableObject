@@ -20,8 +20,6 @@ public class GameManager : MonoBehaviour {
 
     public void SaveName()
     {
-        //SingletonControllerFixIssue4.Instance.Name =  objName.text;
-        //SingletonController.instance.Name = objName.text;
         nameData.name = objName.text;
         sceneLoader.LoadNextScene();
 
@@ -35,7 +33,7 @@ public class GameManager : MonoBehaviour {
         }
 
         //tmproName.text = SingletonControllerFixIssue4.Instance.Name;
-        tmpName.text = SingletonController.instance.Name;
+        //tmpName.text = SingletonController.instance.Name;
         tmpName.text = nameData.name;
         //switch (singletonType)
         //{
